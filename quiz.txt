@@ -1,0 +1,65 @@
+Q: What is the difference between the branch names "main" and "master"?
+A:
+
+Q: How do you checkout into the working tree of branch "main"?
+A:
+
+Q: What is the command that allows you to temporarily store away your current, uncommited changes in order to restore them later?
+A:
+
+Q: How do you list the commit history?
+A:
+
+Q: What is the difference between "git pull" and "git fetch"?
+A:
+
+Q: What is the return type of the expression (true && false)?
+A:
+
+Q: How can you write "i = i + 2" more concisely?
+A:
+
+Q: How do you split a string on each occurence of ","?
+A:
+
+Q: How do you compare a String the proper way? How do you ignore the casing of the words?
+A:
+
+Q: Name an implementation of the "List" interface. Is a list ordered, is it sorted?
+A:
+
+Q: Name an implementation of the "Set" interface. Is a list ordered, is it sorted?
+A:
+
+Q: We have an array "humans", what is the correct way of retrieving it's size?
+A:
+
+Q: For a list "humans", we try to access it's size with "int size = humans.size;". Is that correct?
+A:
+
+Q: How can we catch exceptions and prevent them from crashing our program?
+A:
+
+Q: How can you quickly load all lines from a file "quiz.txt" using a class from "java.nio"?
+A:
+
+Q: We have a class "Apple" that has an attribute "price" and also contains a "DEFAULT_PRICE" for all new apples. Which of them is static and why?
+A:
+
+Q: What is the full declaration of the "main" method of a class?
+A:
+
+Q: What is an object?
+A:
+
+Q: Which naming rule should you apply to the naming of methods?
+A:
+
+Q: Does java.util.Date only describe the date?
+A:
+
+Q: How can you store the local time (no time zone info)?
+A:
+
+Q: Name at least one example of a generic interface from the standard library.
+A:

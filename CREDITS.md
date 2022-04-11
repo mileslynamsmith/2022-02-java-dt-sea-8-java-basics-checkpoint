@@ -1,0 +1,1 @@
+Based on https://github.com/WildCodeSchool/sea-wave-6-checkpoint-1/tree/main
