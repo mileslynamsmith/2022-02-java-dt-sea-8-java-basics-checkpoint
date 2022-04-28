@@ -1,65 +1,65 @@
 Q: What is the difference between the branch names "main" and "master"?
-A:
+A: when you create a git repo on github the branch is called master.  you can then change it using git branch -M main.  the policy was introduced as master was seen as politically incorrect.  there is no difference.
 
 Q: How do you checkout into the working tree of branch "main"?
-A:
+A: git checkout main
 
 Q: What is the command that allows you to temporarily store away your current, uncommited changes in order to restore them later?
-A:
+A: git stash
 
 Q: How do you list the commit history?
-A:
+A: git log 
 
 Q: What is the difference between "git pull" and "git fetch"?
-A:
+A: git fetch gets the latest version from the remote, git pull gets and mergers it
 
 Q: What is the return type of the expression (true && false)?
-A:
+A: its a boolean expression and as nothing can be both true and false at the same it returns false 
 
 Q: How can you write "i = i + 2" more concisely?
-A:
+A: i +=2
 
 Q: How do you split a string on each occurence of ","?
-A:
+A: String [] splitupnirvana = "kurt, dave, kris"split.(",");
 
 Q: How do you compare a String the proper way? How do you ignore the casing of the words?
-A:
+A: using Object.equals();
 
 Q: Name an implementation of the "List" interface. Is a list ordered, is it sorted?
-A:
+A: Arraylist, a list maintains its order, but you can also sort an Arraylist using sort()!
 
 Q: Name an implementation of the "Set" interface. Is a list ordered, is it sorted?
-A:
+A: Hashset. a set is not ordered.  a list is ordered but it can also be sorted (i guess the above is typo and you meant "is a set ordered")
 
 Q: We have an array "humans", what is the correct way of retrieving it's size?
-A:
+A: using str.length  e.g. String [] str = {"human"}; System.out.println(str.length);
 
 Q: For a list "humans", we try to access it's size with "int size = humans.size;". Is that correct?
-A:
+A: no it's using size(), so needs the brackets
 
 Q: How can we catch exceptions and prevent them from crashing our program?
-A:
+A: using try {}catch (exception e){} 
 
 Q: How can you quickly load all lines from a file "quiz.txt" using a class from "java.nio"?
-A:
+A: you can't 
 
 Q: We have a class "Apple" that has an attribute "price" and also contains a "DEFAULT_PRICE" for all new apples. Which of them is static and why?
-A:
+A: default price as it always stays the same
 
 Q: What is the full declaration of the "main" method of a class?
-A:
+A: public void main (String args [])
 
 Q: What is an object?
-A:
+A: an object is a instance(occurence) of a class
 
 Q: Which naming rule should you apply to the naming of methods?
-A:
+A: camelCase
 
 Q: Does java.util.Date only describe the date?
-A:
+A: no it gives gives the date and also the time since 1st jan 1970 00:00
 
 Q: How can you store the local time (no time zone info)?
-A:
+A: with java.time.LocalTime
 
 Q: Name at least one example of a generic interface from the standard library.
-A:
+A: T, as in public class GenericInterface <T> {}
