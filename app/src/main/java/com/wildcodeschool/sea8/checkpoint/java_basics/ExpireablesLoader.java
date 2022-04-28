@@ -29,7 +29,7 @@ public class ExpireablesLoader {
 
             for (String line : lines) {
                 // TODO: split the line at the right symbol instead of ""
-                String[] lineEntries = line.split("");
+                String[] lineEntries = line.split(",");
 
                 if(lineEntries.length == 0) continue;
                 if(lineEntries[0].equalsIgnoreCase("Certificate")) {
