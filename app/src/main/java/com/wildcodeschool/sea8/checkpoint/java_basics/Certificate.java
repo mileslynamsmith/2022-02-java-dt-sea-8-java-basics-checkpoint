@@ -23,7 +23,7 @@ public class Certificate implements IExpireable {
 
     public void renew(long daysValidFromNow) {
         // TODO: renew certificate 
-        // compare todays date with expirydate 
+        // compare todays date with expirydate, set attribute validto to appropriate local date
         this.validTo = LocalDate.now().plusDays(daysValidFromNow);
 
     }
