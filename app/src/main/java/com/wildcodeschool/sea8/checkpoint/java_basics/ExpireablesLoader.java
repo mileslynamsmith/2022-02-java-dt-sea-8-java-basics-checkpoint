@@ -36,7 +36,7 @@ public class ExpireablesLoader {
                     // TODO: load the certificate and add it to the database
                     // array lineEntries might look like this:
                     // ["Certificate", "SEA 8 Checkpoint", "WCS", "2022-06-18"]
-
+                
 
 
                 } else if (lineEntries[0].equalsIgnoreCase("DairyProduct")) {
