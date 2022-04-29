@@ -3,6 +3,7 @@ package com.wildcodeschool.sea8.checkpoint.java_basics;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.time.LocalDate;
 import java.util.List;
 
 public class ExpireablesLoader {
@@ -36,15 +37,15 @@ public class ExpireablesLoader {
                     // TODO: load the certificate and add it to the database
                     // array lineEntries might look like this:
                     // ["Certificate", "SEA 8 Checkpoint", "WCS", "2022-06-18"]
+                //LocalDate lineEntries[3] = LocalDate.parse(lineEntries[3]);?????
+
                 database.addItem(Certificate (lineEntries[1], lineEntries[2]));
                 
                 } else if (lineEntries[0].equalsIgnoreCase("DairyProduct")) {
                     // TODO: load the dairy product and add it to the database
                     // array lineEntries might look like this:
-                    // ["DairyProduct", "2022-03-15", "7"]
+                    // ["DairyProduct", "2022-03-15", "7"] but how to i change it to a LocalDate not a string???
                 database.addItem(DairyProduct (lineEntries[1], lineEntries[2]));
-
-
                 }
             }
         } catch (IOException e) {
