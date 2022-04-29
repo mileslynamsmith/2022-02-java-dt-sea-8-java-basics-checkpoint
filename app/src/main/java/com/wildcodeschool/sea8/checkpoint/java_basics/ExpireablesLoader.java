@@ -36,6 +36,7 @@ public class ExpireablesLoader {
                     // TODO: load the certificate and add it to the database
                     // array lineEntries might look like this:
                     // ["Certificate", "SEA 8 Checkpoint", "WCS", "2022-06-18"]
+                database.addItem(Certificate (lineEntries[1], lineEntries[2]));
                 
 
 
@@ -43,7 +44,7 @@ public class ExpireablesLoader {
                     // TODO: load the dairy product and add it to the database
                     // array lineEntries might look like this:
                     // ["DairyProduct", "2022-03-15", "7"]
-
+                database.addItem(DairyProduct (lineEntries[1], lineEntries[2]));
 
 
                 }
@@ -53,5 +54,13 @@ public class ExpireablesLoader {
         }
         
         return database;
+    }
+
+    private static IExpireable DairyProduct(String string, String string2) {
+        return null;
+    }
+
+    private static IExpireable Certificate(String string, String string2) {
+        return null;
     }
 }
