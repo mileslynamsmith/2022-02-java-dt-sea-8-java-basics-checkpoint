@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Collections;
 import java.util.Comparator;
 import javax.lang.model.util.ElementScanner6;
+
+import com.google.errorprone.annotations.OverridingMethodsMustInvokeSuper;
     
 public class ExpireablesDatabase<E extends IExpireable> {
     private List<E> listOfExpireables = new ArrayList<>();
@@ -26,18 +28,14 @@ public class ExpireablesDatabase<E extends IExpireable> {
     public void sortByExpirationDate(boolean descending) {
         // TODO: sort the list by the expiration date of it's entries
         // hint: use a comparator and expiryDate()
-        Comparator<E> expiryDateDescendingComparator = new Comparator<E>(){
+        Comparator<E> expiryDateComparator = new Comparator<E>(){
             @Override
             public int compare(E a, E b) {
-            return b.expiryDate().compareTo(a.expiryDate()); 
+            if (descending == true){
+            return b.expiryDate().compareTo(a.expiryDate());}
             return a.expiryDate().compareTo(b.expiryDate());
-            if (descending == true) {
-            }
-            else
-            Collections.sort(listOfExpireables, expiryDateDescendingComparator);  
-            }
+            Collections.sort(listOfExpireables, expiryDateComparator);
         }
-    }
 
     public E getFirstEntry() {
         // TODO: Return first item in the list

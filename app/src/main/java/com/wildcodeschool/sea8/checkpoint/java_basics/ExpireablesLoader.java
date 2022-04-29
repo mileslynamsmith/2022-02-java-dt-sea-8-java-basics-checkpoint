@@ -38,8 +38,6 @@ public class ExpireablesLoader {
                     // ["Certificate", "SEA 8 Checkpoint", "WCS", "2022-06-18"]
                 database.addItem(Certificate (lineEntries[1], lineEntries[2]));
                 
-
-
                 } else if (lineEntries[0].equalsIgnoreCase("DairyProduct")) {
                     // TODO: load the dairy product and add it to the database
                     // array lineEntries might look like this:
